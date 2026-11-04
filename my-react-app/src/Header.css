@@ -1,7 +1,7 @@
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 24px;
   padding: 16px 32px;
   border-bottom: 1px solid var(--border);
@@ -10,15 +10,15 @@ header {
 
 header h1 {
   margin: 0;
-  color: var(--accent);
   font-size: 28px;
+  color: var(--accent);
   letter-spacing: -0.5px;
 }
 
 header > div {
   display: flex;
-  align-items: center;
   gap: 24px;
+  align-items: center;
 }
 
 header a {
@@ -28,12 +28,12 @@ header a {
   transition: color 0.2s ease;
 }
 
-header a:hover,
-header a:focus-visible {
+header a:hover {
   color: var(--accent);
 }
 
 header a:focus-visible {
+  color: var(--accent);
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
@@ -41,13 +41,13 @@ header a:focus-visible {
 @media (max-width: 600px) {
   header {
     flex-direction: column;
-    gap: 12px;
     padding: 16px;
+    gap: 12px;
   }
 
   header > div {
     flex-wrap: wrap;
-    justify-content: center;
     gap: 12px 20px;
+    justify-content: center;
   }
 }
